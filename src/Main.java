@@ -30,8 +30,7 @@ public class Main {
                             BaseUI();
                         } else {
                             switch (queryManagerStatus) {
-                                case "y", "Y" -> {
-                                }
+                                case "y", "Y" -> Student.DepartmentManager.DepartmentManagerUI(Roster);
                                 // call department manager UI
                                 default -> {
                                     System.out.println("Authentication error. Please try again.");
@@ -77,6 +76,7 @@ public class Main {
                     }
 
                     case 3 -> {
+                        DropSport(input,Roster,ListOfSports,studentName,SportsList);
 
                     }
                     case 4 -> School.BaseUI();
